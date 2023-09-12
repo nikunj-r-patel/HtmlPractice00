@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            max-width: 70%;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Times New Roman', Times, serif;
+            padding: 5px;
+            background: gray
+        }
+
+        .header {
+            padding: 5px;
+            background-color: gray;
+            /* background-color: white; */
+            text-align: center;
+            border: 5px  double rgb(9, 213, 228 );
+            border-radius: 20px;
+            box-shadow: -3px -3px 50px rgb(9, 213, 228 );
+            
+        }
+
+        .header p {
+            color:rgb(9, 213, 228 );
+            text-align: center;
+            font-size: 20px;
+            text-shadow: 2px 2px 4px #000000;
+
+        }
+
+        .header h1 {
+            color:rgb(9, 213, 228 );
+            font-size: 60px;
+            word-spacing: 7px;
+            text-shadow: 2px 2px 4px #000000;
+            
+        }
+
+        .navbar {
+            overflow: hidden;
+            margin-top: 5px;
+            background-color: gray;
+            border: 5px  double rgb(31, 238, 4);
+            border-radius: 20px;
+            box-shadow: -3px -3px 50px rgb(31, 238, 4);
+        }
+
+        .navbar a {
+            font-size: 35px;
+            float: left;
+            display: block;
+            text-align: center;
+            padding: 5px 80px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            box-shadow: 5px -5px 10px black inset;
+        }
+
+        .leftColumn {
+            float: left;
+            width: 40%;
+        }
+
+        .rightColumn {
+            float: left;
+            width: 60%;
+            padding-left: 5px;
+        }
+
+        /* .rightColumn .card {
+            border-radius: 3px 20px 20px 3px;
+        } */
+
+        .card {
+            overflow: auto;
+            color:rgb(38, 3, 233);
+            /* background-color: white; */
+            background-color: gray;
+            padding: 20px;
+            margin-top: 5px;
+            margin-bottom: 5PX;
+            border: 3px  double rgb(38, 3, 233);
+            /* border-radius: 20px 3px 3px 20px; */
+            border-radius: 20px 20px 20px 20px;
+            box-shadow: -3px -3px 30px rgb(38, 3, 233);
+        }
+        .card:hover {
+            color:rgb(9, 213, 228 );
+            border: none;
+            box-shadow: 5px -5px 10px rgb(9, 213, 228) inset;
+
+        }
+
+        .footer {
+            width: 100%;
+            color:rgb(9, 213, 228 );
+            overflow: auto;
+            padding: 5px;
+            background-color: gray;
+            /* background-color: white; */
+            border: 5px  double rgb(9, 213, 228);
+            border-radius: 20px;
+            box-shadow: 3px 3px 50px rgb(9, 213, 228);
+
+        }
+        .footer h2 {
+            border-bottom: 1px solid rgb(9, 213, 228);
+
+        }
+        .footer:hover {
+            border: none;
+            box-shadow: 5px -5px 10px rgb(9, 213, 228) inset;
+
+        }
+
+        h2 {
+            border-bottom: 1px solid rgb(38, 3, 233);
+            display: flex;
+            text-align: left;
+            margin-top: 20px;
+
+        }
+
+        h4 {
+            display: inline;
+            justify-content: center;
+            background-color: rgba(156, 150, 150, 0.897);
+            margin-left: 10px;
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 3px;
+        }
+
+        ul li {
+            margin-bottom: 6px;
+        }
+
+        P {
+            text-align: justify;
+        }
+
+        @media only screen and (max-width: 1500px) {
+
+            .leftColumn,
+            .rightColumn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Nikunjkumar Ramanbhai Patel</h1>
+        <p><i class="fa fa-envelope"></i>: nikunj.webosmotic@gmail.com</p>
+        <p><i class="fa fa-phone"></i>: 7016407136, 9429070377</p>
+        <p><i class="fa fa-map-marker   "></i>: A-46, Ashish row house, Variyav road, Jahangirpura, Surat.</p>
+        <p><i class="fa fa-calendar"></i>: 17 January 1988</p>
+    </div>
+    <div class="navbar">
+        <a href="#gmail" title="Gmail" style="color: brown;"><i class="fa fa-envelope-o"></i> </a>
+        <a href="#facebook" title="Facebook" style="color: rgb(0, 255, 255);"><i class="fa fa-facebook"></i> </a>
+        <a href="#linked in" title="Linked-In" style="color: rgb(0, 174, 255);"><i class="fa fa-linkedin"></i> </a>
+        <a href="#instagram" title="Instagram" style="color: red;"><i class="fa fa-instagram"></i> </a>
+        <a href="#github" title="GitHub" style="color: purple;"><i class="fa fa-github"></i></a>
+        <a href="#whatsapp" title="Whats App" style=" float:right; color: rgb(158, 238, 10);"><i
+                class="fa fa-whatsapp"></i></a>
+    </div>
+    <div class="row">
+        <div class="leftColumn">
+            <div class="card">
+                <h2>Skills</h2>
+                <div class="skills">
+                    <h4>Java</h4>
+                    <h4>Hibernate</h4>
+                    <h4>SpringMVC</h4>
+                    <h4>MySQL</h4>
+                    <h4>HTML</h4>
+                    <h4>CSS</h4>
+                    <h4>Java Script</h4>
+                    <h4>C++</h4>
+                    <h4>C</h4>
+                </div>
+            </div>
+            <div class="card">
+                <h2> Education</h2>
+                <h3>BE (Electronics and Communication)</h3>
+                <p> From July 2010 to July 2013,Maharashtra</p>
+                <p> G.H.Raisoni College of Engineering, Jalgaon. </p>
+            </div>
+            <div class="card">
+                <h2>Language Known</h2>
+                <ul>
+                    <li>Hindi</li>
+                    <li>English</li>
+                    <li>Gujarati</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h2>Intrests</h2>
+                <ul>
+                    <li>Drawing</li>
+                    <li>Gaming</li>
+                    <li>Music</li>
+                    <li>Acquiring Knowledge of New Technologies</li>
+                </ul>
+            </div>
+        </div>
+        <div class="rightColumn">
+            <div class="card">
+                <h2>Profile</h2>
+                <p>I have just completed my Java course with
+                    Hibernate and Spring MVC and looking for an
+                    opportunity to work as fresher/intern to
+                    become Professional Java Developer. Also
+                    ready to learn new things to give my best
+                    work.
+                </p>
+            </div>
+            <div class="card">
+                <h2>Courses</h2>
+                <h3>JAVA professional training</h3>
+                <p>From January 2023 to May 2023</p>
+                <p>DESIRE INFOTECH, Gandhinagar.</p>
+            </div>
+            <div class="card">
+                <h2>Professional Experience</h2>
+                <h3>Gujarat State Civil Supplies Corporation
+                    LTD</h3>
+                <p> <strong>IT Executive</strong></p>
+                <p>From December 2017 to December 2022, Gandhinagar</p>
+                <ul>
+                    <li>
+                        <p>Handling Public Distribution System, make
+                            changes through NIC in current PDS
+                            system as per requirement and Report
+                            generation.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Helping hand to understand the whole
+                            system of GSCSCL for the development and
+                            implementation of third party applications
+                            “FarEye ” and “ERP Software” for GSCSCL.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Creating Stock Statements of supply of all
+                            commodities like TOORDAL, CHANA,
+                            EDIBLE OIL and SUGAR for the State
+                            Government Schemes like PDS, ICDS(MMY)
+                            and PM POSHAN(MDM). Also the godown
+                            wise reports for the same to analyze the
+                            requirements of commodity stocks for all
+                            districts of GUJARAT on daily basis.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <h2>Other Qualifications</h2>
+        <ul>
+            <li>Diploma EC</li>
+            <li>PGDCA</li>
+            <li>Embadded Developer</li>
+        </ul>
+    </div>
+</body>
+
+</html>
